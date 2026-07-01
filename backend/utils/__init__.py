@@ -1,0 +1,1 @@
+# SkillSnap Utility module
