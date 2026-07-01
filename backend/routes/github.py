@@ -3,10 +3,10 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import Optional
 
-from ..models.database import get_db
-from ..models.resume import Resume, GitHubProfile
-from ..integrations.github_integration import GitHubIntegration
-from ..services.gemini_service import GeminiService
+from models.database import get_db
+from models.resume import Resume, GitHubProfile
+from integrations.github_integration import GitHubIntegration
+from services.gemini_service import GeminiService
 
 router = APIRouter(prefix="/api/github", tags=["github"])
 

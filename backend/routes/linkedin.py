@@ -3,10 +3,10 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import Optional
 
-from ..models.database import get_db
-from ..models.resume import Resume, LinkedInProfile
-from ..integrations.linkedin_integration import LinkedInIntegration
-from ..services.gemini_service import GeminiService
+from models.database import get_db
+from models.resume import Resume, LinkedInProfile
+from integrations.linkedin_integration import LinkedInIntegration
+from services.gemini_service import GeminiService
 
 router = APIRouter(prefix="/api/linkedin", tags=["linkedin"])
 

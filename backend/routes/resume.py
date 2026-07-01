@@ -3,10 +3,10 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 
-from ..models.database import get_db
-from ..models.resume import Resume, RecruiterReadiness, Portfolio, InterviewQuestion, SkillRoadmap, WeeklyRoadmap, GitHubProfile, LinkedInProfile
-from ..services.pdf_service import PDFService
-from ..services.gemini_service import GeminiService
+from models.database import get_db
+from models.resume import Resume, RecruiterReadiness, Portfolio, InterviewQuestion, SkillRoadmap, WeeklyRoadmap, GitHubProfile, LinkedInProfile
+from services.pdf_service import PDFService
+from services.gemini_service import GeminiService
 
 router = APIRouter(prefix="/api")
 
