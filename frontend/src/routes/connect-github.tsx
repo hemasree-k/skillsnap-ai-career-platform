@@ -29,7 +29,7 @@ function ConnectGithub() {
     setResult(null);
 
     try {
-      const response = await fetch("http://localhost:8010/api/github/connect", {
+      const response = await fetch("https://skillsnap-ai-career-platform.onrender.com/api/github/connect", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

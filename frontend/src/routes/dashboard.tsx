@@ -184,8 +184,8 @@ function Dashboard() {
     setError(null);
     try {
       const endpoint = idStr
-        ? `http://localhost:8010/api/dashboard/${idStr}`
-        : "http://localhost:8010/api/dashboard/demo";
+        ? `https://skillsnap-ai-career-platform.onrender.com/api/dashboard/${idStr}`
+        : "https://skillsnap-ai-career-platform.onrender.com/api/dashboard/demo";
         
       const response = await fetch(endpoint);
       if (!response.ok) {
@@ -211,7 +211,7 @@ function Dashboard() {
     setEvaluationResult(null);
     try {
       const questionText = data.interview_questions[currentQuestionIndex];
-      const response = await fetch("http://localhost:8010/api/interview/evaluate", {
+      const response = await fetch("https://skillsnap-ai-career-platform.onrender.com/api/interview/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -252,7 +252,7 @@ function Dashboard() {
     setIsRegeneratingPortfolio(true);
     setPortfolioNotification(null);
     try {
-      const response = await fetch("http://localhost:8010/api/portfolio/generate", {
+      const response = await fetch("https://skillsnap-ai-career-platform.onrender.com/api/portfolio/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resume_id: data.resume_id }),

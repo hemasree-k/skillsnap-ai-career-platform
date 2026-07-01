@@ -33,7 +33,7 @@ function ConnectLinkedIn() {
     setResult(null);
 
     try {
-      const response = await fetch("http://localhost:8010/api/linkedin/connect", {
+      const response = await fetch("https://skillsnap-ai-career-platform.onrender.com/api/linkedin/connect", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

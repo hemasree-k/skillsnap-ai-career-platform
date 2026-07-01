@@ -39,7 +39,7 @@ function UploadResume() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await fetch("http://localhost:8010/api/resume/upload", {
+      const response = await fetch("https://skillsnap-ai-career-platform.onrender.com/api/resume/upload", {
         method: "POST",
         body: formData,
       });
