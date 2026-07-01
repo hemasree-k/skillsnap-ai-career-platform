@@ -3,11 +3,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
-from .models.database import engine, Base, run_migrations
-from .routes.resume import router as resume_router
-from .routes.github import router as github_router
-from .routes.linkedin import router as linkedin_router
-from .routes.roadmap import router as roadmap_router
+from models.database import engine, Base, run_migrations
+from routes.resume import router as resume_router
+from routes.github import router as github_router
+from routes.linkedin import router as linkedin_router
+from routes.roadmap import router as roadmap_router
 
 # Create DB tables if they don't exist
 try:
